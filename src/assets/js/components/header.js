@@ -9,3 +9,8 @@ headerNavItems.forEach(item => {
 		item.querySelector('.header__nav-arrow').style.display = 'none';
 	}
 })
+
+userEnter.addEventListener('click', function() {
+	modalEntry.classList.add('modal--open');
+	body.classList.add('_lock');
+})

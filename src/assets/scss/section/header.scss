@@ -171,7 +171,7 @@
 		// .header__logo-img
 		&-img {
 			
-			@media (max-width: 640px) {
+			@media (max-width: 880px) {
 				width: 100px;
 				height: auto;
 			}
@@ -193,7 +193,7 @@
 			position: absolute;
 			right: -100%;
 			top: -10px;
-			padding: 70px 40px 30px 30px;
+			padding: 70px 10px 30px 30px;
 			transition: right 0.5s ease;
 			background-color: #fff;
 			width: 100%;

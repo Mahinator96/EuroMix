@@ -1,0 +1,21 @@
+.modal__success {
+	// .modal__success-header
+	&-header {
+		margin-bottom: 27px;
+	}
+	// .modal__success-img
+	&-img {
+		margin-bottom: 15px;
+	}
+	// .modal__success-subtitle
+	&-subtitle {
+		margin-bottom: 6px;
+	}
+	// .modal__success-text
+	&-text {
+		font-size: 16px;
+		line-height: 125%; /* 20/16 */
+		text-align: center;
+		width: 15.75em;
+	}
+}

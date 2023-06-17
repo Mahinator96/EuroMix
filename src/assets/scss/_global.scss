@@ -27,7 +27,7 @@ body{
       bottom: 0;
       left: 0;
       right: 0;
-      background-color: rgba(#000, 0.4);
+      background-color: rgba(#000, 0.6);
     }
 		// body._lock .body-wrapper
 		.body-wrapper {
@@ -73,6 +73,7 @@ img {
 button, input, textarea, fieldset {
   color: inherit;
   font-size: inherit;
+	font-family: var(--fontFamily);
   margin: 0;
   padding: 0;
   border: none;
@@ -117,3 +118,8 @@ picture {
 	padding: 0 var(--containerPadding);
 }
 
+.btn {
+	text-transform: uppercase;
+	border-radius: 100px;
+	font-size: 14px;
+}
