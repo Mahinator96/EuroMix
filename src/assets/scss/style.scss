@@ -1,0 +1,13 @@
+/* SETTINGS */
+@import '_fonts.scss';
+@import 'var.scss';
+@import '_global.scss';
+@import '__mixin.scss';
+
+/* COMPONENTS */
+@import 'components/search.scss';
+@import 'components/contacts.scss';
+@import 'components/burger.scss';
+
+/* SECTION */
+@import 'section/header.scss';

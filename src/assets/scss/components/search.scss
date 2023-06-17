@@ -1,0 +1,43 @@
+.search {
+	// .search__input
+	&__input {
+		position: relative;
+		padding-right: 31px;
+		// .search__input::before
+		&::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translateY(-50%);
+			width: 24px;
+			height: 24px;
+			background-image: url('../images/search.svg');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+		}
+		// .search__input input 
+		input {
+			font-family: var(--fontFamily);
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 114.285714%; /* 16/14 */
+			width: 226px;
+			padding-bottom: 4px;
+			border-bottom: 1px solid rgba(#fff, 0.4);
+			// .search__input input::placeholder
+			&::placeholder {
+				color: var(--textWhite);
+				opacity: 0.7;
+			}
+		}
+	}
+	// .search__list
+	&__list {
+		display: none;
+	}
+	// .search__item
+	&__item {
+	}
+}

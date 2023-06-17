@@ -1,0 +1,28 @@
+:root {
+	--mainColor: #222A31;
+	--fontFamily: "Ubuntu", "Arial", sans-serif;
+	--fontSize: 15px;
+	--fontWeight: 500;
+	--lineHeight: 112.5%; /* 18/16 */	
+	--ffInter: "Inter", "Arial", sans-serif;
+	--ffRoboto: "Roboto", "Arial", sans-serif;
+	--containerPadding: 10px;
+
+	--YellowMain: #FF6B00;
+	--YellowBg: #FF8000;
+	--YellowDark: #EC5600;
+	--bgGrayLite: #F2F2F2;
+	--bgGray: #EFF4F4;
+	--bgGrayMediuj: #4A4A4A;
+	
+	--textWhite: #fff;
+	--textBlack: #000;
+	--textGreen: #358D00;
+	--textGray: #8F8F8F;
+	--textGrayDark: #474747;
+	--textGrayMedium: #53595F;
+}
+
+$containerWidth: 1202px;
+$maxWidth: 1920;
+$minWidth: 320;

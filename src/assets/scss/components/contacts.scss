@@ -1,0 +1,41 @@
+.contacts {
+	// .contacts__item
+	&__item {
+		padding-bottom: 4px;
+	}
+	// .contacts__link
+	&__link {
+		position: relative;
+		// .contacts__link::after
+		&::after {
+			content: '';
+			position: absolute;
+			top: calc(50% - 2px);
+			left: 0;
+			transform: translateY(-50%);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+		}
+		// .contacts__link--email
+		&--email{
+			padding-left: 32px;
+			// .contacts__link--email::after
+			&::after {
+				width: 19px;
+				height: 14px;
+				background-image: url('../images/mail.svg');
+		}
+		}
+		// .contacts__link--phone
+		&--phone{
+			padding-left: 24px;
+			// .contacts__link--phone::after
+			&::after {
+				width: 12px;
+				height: 20px;
+				background-image: url('../images/phone.svg');
+			}
+		}
+	}
+}
