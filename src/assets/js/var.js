@@ -6,7 +6,9 @@ const body = document.querySelector('body'),
 			modalCloses = document.querySelectorAll('.modal__close'),
 			userEnter = document.querySelector('.header-top__enter'),
 			modalEntry = document.querySelector('.modal__entry'),
-			registerLink = document.querySelector('.modal__you-link')
-			modalКegister = document.querySelector('.modal__register')
+			registerLink = document.querySelector('.modal__you-link'),
+			modalКegister = document.querySelector('.modal__register'),
+			requestCheck = document.querySelector('.request__form-check'),
+			requestInput = requestCheck.querySelector('input')
 
-console.log();
+// console.log();
