@@ -44,7 +44,6 @@ const hideCards = (cards, maxCardsMath) => {
 
 		if (index <= maxCardsMath) { 				// Если карточек меньше чем указано в параметре
 			item.classList.remove('hidden');
-			console.log('hi');
 		}
 	})
 }
@@ -55,5 +54,11 @@ window.addEventListener('resize', event => {
 
     if (eventWidth <= 1920 && eventWidth > 640) hideCards(catalogFactoryItems, 4);
     if (eventWidth <= 640 && eventWidth > 320) hideCards(catalogFactoryItems, 2);
+
+    if (eventWidth <= 1920 && eventWidth > 640) hideCards(catalogProductsItems, 4);
+    if (eventWidth <= 640 && eventWidth > 320) hideCards(catalogProductsItems, 2);
+
+    if (eventWidth <= 1920 && eventWidth > 640) hideCards(catalogCompleteItems, 4);
+    if (eventWidth <= 640 && eventWidth > 320) hideCards(catalogCompleteItems, 2);
 })
 

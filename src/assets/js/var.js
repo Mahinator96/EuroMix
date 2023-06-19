@@ -12,6 +12,8 @@ const body = document.querySelector('body'),
 			// requestInput = requestCheck.querySelector('input'),
 			catalogLists = document.querySelectorAll('.catalog__list')
 			catalogTabs = Array.from(document.querySelectorAll('.catalog__tab')),
-			catalogFactoryItems = Array.from(document.querySelectorAll('.catalog__factory-item'))
+			catalogFactoryItems = Array.from(document.querySelectorAll('.catalog__factory-item')),
+			catalogProductsItems = Array.from(document.querySelectorAll('.catalog__products-item')),
+			catalogCompleteItems = Array.from(document.querySelectorAll('.catalog__complete-item'))
 
 // console.log();
