@@ -1,0 +1,10 @@
+.section {
+
+	// .section-title
+	&-title {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 116.666667%; /* 28/24 */
+		text-transform: uppercase;
+	}
+}

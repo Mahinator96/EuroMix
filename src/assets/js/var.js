@@ -9,6 +9,8 @@ const body = document.querySelector('body'),
 			registerLink = document.querySelector('.modal__you-link'),
 			modalКegister = document.querySelector('.modal__register'),
 			requestCheck = document.querySelector('.request__form-check'),
-			requestInput = requestCheck.querySelector('input')
+			// requestInput = requestCheck.querySelector('input'),
+			catalogTabs = Array.from(document.querySelectorAll('.catalog__tab')),
+			catalogFactoryItems = Array.from(document.querySelectorAll('.catalog__factory-item'))
 
 // console.log();

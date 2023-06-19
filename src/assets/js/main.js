@@ -3,5 +3,6 @@
 */
 //= var.js
 /* //= components/header.js */
-//= components/request.js
+/* //= components/request.js */
+//= components/catalog.js
 /* //= components/modal.js */

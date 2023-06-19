@@ -5,14 +5,17 @@
 @import '__mixin.scss';
 
 /* COMPONENTS */
+@import 'components/section.scss';
 @import 'components/search.scss';
 @import 'components/contacts.scss';
 @import 'components/burger.scss';
 @import 'components/modal.scss';
 @import 'components/request.scss';
+@import 'components/catalog-item.scss';
 
 /* SECTION */
 @import 'section/header.scss';
 @import 'section/promo.scss';
 @import 'section/modalRegister.scss';
 @import 'section/modalSuccess.scss';
+@import 'section/catalog.scss';
