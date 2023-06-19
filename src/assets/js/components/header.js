@@ -1,7 +1,11 @@
 burger.addEventListener('click', function(e) {
-	e.target.classList.toggle('burger--active');
-	body.classList.toggle('_lock');
-	headerNav.classList.toggle('header__nav--open');
+	// e.target.classList.toggle('burger--active');
+	body.classList.add('_lock');
+	headerNav.classList.add('header__nav--open');
+})
+burgerClose.addEventListener('click', function(e) {
+	body.classList.remove('_lock');
+	headerNav.classList.remove('header__nav--open');
 })
 
 headerNavItems.forEach(item => {
