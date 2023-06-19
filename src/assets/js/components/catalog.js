@@ -1,20 +1,39 @@
-catalogTabs.forEach(tab => {
+// Спрятать все активные табы и списки
+const hideTabList = (tab, tabs, lists, tabActive, listActive) => {
+	if (!tab.classList.contains(tabActive)) {
+		tabs.forEach(item => {
+			item.classList.remove(tabActive);
+		})
+		lists.forEach(item => {
+			item.classList.remove(listActive);
+		})
+	}
+}
 
+// Добавить табу и классу активные классы
+const showTabList = function(e, tab, tabData, tabActive, listActive) {
+	if ( e.target.classList.contains('catalog__tab-text') || e.target.classList.contains('catalog__tab')) {
+
+		if (!tab.classList.contains(tabActive)) {
+			tab.classList.add(tabActive);
+			
+			if (tabData) {
+				const listId = document.querySelector(`#${tabData}`);
+			
+				listId.classList.add(listActive);
+			}
+		}
+	}
+}
+
+catalogTabs.forEach(tab => {
+	const tabData = tab.dataset.catalog;
 
 	tab.addEventListener('click', function(e) {
 
-		if (!tab.classList.contains('catalog__tab--active')) {
-			catalogTabs.forEach(item => {
-				item.classList.remove('catalog__tab--active');
-			})
-		}
+		hideTabList(tab, catalogTabs, catalogLists, 'catalog__tab--active', 'catalog__list--active');
 
-		if ( e.target.classList.contains('catalog__tab-text') || e.target.classList.contains('catalog__tab')) {
-
-			if (!tab.classList.contains('catalog__tab--active')) {
-				tab.classList.add('catalog__tab--active');
-			}
-		}
+		showTabList(e, tab, tabData, 'catalog__tab--active', 'catalog__list--active');
 	})
 })
 
@@ -34,6 +53,7 @@ const hideCards = (cards, maxCardsMath) => {
 window.addEventListener('resize', event => {
 	let eventWidth = event.target.window.innerWidth
 
+    if (eventWidth <= 1920 && eventWidth > 640) hideCards(catalogFactoryItems, 4);
     if (eventWidth <= 640 && eventWidth > 320) hideCards(catalogFactoryItems, 2);
 })
 
