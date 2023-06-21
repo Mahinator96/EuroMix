@@ -15,6 +15,7 @@ const body = document.querySelector('body'),
 			catalogTabs = Array.from(document.querySelectorAll('.catalog__tab')),
 			catalogFactoryItems = Array.from(document.querySelectorAll('.catalog__factory-item')),
 			catalogProductsItems = Array.from(document.querySelectorAll('.catalog__products-item')),
-			catalogCompleteItems = Array.from(document.querySelectorAll('.catalog__complete-item'))
+			catalogCompleteItems = Array.from(document.querySelectorAll('.catalog__complete-item')),
+			partnersSlider = document.querySelector('.partners__slider')
 
 // console.log();
