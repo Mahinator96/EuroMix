@@ -1,0 +1,67 @@
+
+.baner {
+	color: var(--textWhite);
+	background-image: url('../images/banerMy/baner-bg.svg');
+	background-color: var(--mainColor);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	// .banner__contacts
+	&__contacts {
+		color: var(--textWhite);
+	}
+	// .banner__contacts-link
+	&__contacts-link {
+	}
+	// .banner__social-list
+	&__social-list {
+	}
+	// .banner__social-item
+	&__social-item {
+	}
+	// .banner__social-link
+	&__social-link {
+	}
+	// .banner__social-img
+	&__social-img {
+	}
+	// .banner__hgroup
+	&__hgroup {
+		color: var(--textWhite);
+	}
+	// .banner__hgroup-title
+	&__hgroup-title {
+	}
+	// .banner__hgroup-subtitle
+	&__hgroup-subtitle {
+	}
+	// .banner__bottom
+	&__bottom {
+		color: var(--textWhite);
+	}
+	// .banner__prof-list
+	&__prof-list {
+	}
+	// .banner__prof-item
+	&__prof-item {
+	}
+	// .banner__call
+	&__call {
+	}
+	// .banner__call-question
+	&__call-question {
+	}
+	// .banner__call-person
+	&__call-person {
+	}
+	// .banner__call-name
+	&__call-name {
+	}
+	// .banner__call-professional
+	&__call-professional {
+	}
+	// .banner__call-btn
+	&__call-btn {
+	}
+}
+
