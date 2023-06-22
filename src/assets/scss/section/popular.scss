@@ -1,0 +1,37 @@
+.popular {
+	margin-bottom: 106px;
+	// .popular__title
+	&__title {
+		margin-bottom: 40px;
+	}
+	// .popular__list
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 30px;
+
+		@media (max-width: 1180px) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+		@media (max-width: 880px) {
+			grid-template-columns: repeat(2, 1fr);
+			padding: 0 20px;
+		}
+		@media (max-width: 640px) {
+			grid-template-columns: 1fr;
+			padding: 0;
+		}
+	}
+	// .popular__product
+	&__product{
+		// .popular__product-stock
+		&-stock {
+		}
+		// .pupular__product-title
+		&-title {
+		}
+		// .pupular__product-price
+		&-price {
+		}
+	}
+}
