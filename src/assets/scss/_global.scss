@@ -10,7 +10,7 @@ body{
 	font-size: var(--fontSize);
 	font-family: var(--fontFamily);
 	font-weight: var(--fontWeight);
-	line-height: var(--lineHeight);
+	line-height: 115%;
   position: relative;
   min-width: $minWidth + px;
   overflow-x: hidden;
