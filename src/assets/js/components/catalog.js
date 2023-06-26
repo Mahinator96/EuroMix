@@ -11,16 +11,18 @@ const hideTabList = (tab, tabs, lists, tabActive, listActive) => {
 }
 
 // Добавить табу и классу активные классы
-const showTabList = function(e, tab, tabData, tabActive, listActive) {
-	if ( e.target.classList.contains('catalog__tab-text') || e.target.classList.contains('catalog__tab')) {
+const showTabList = function(e, tab, tabData, tabClosest, tabActive, listActive) {
+	if ( e.target.closest(`${tabClosest}`)) {
 
 		if (!tab.classList.contains(tabActive)) {
 			tab.classList.add(tabActive);
 			
 			if (tabData) {
-				const listId = document.querySelector(`#${tabData}`);
+				const listId = document.getElementById(`${tabData}`);
 			
-				listId.classList.add(listActive);
+				if (listId) {
+					listId.classList.add(listActive);
+				}
 			}
 		}
 	}
@@ -28,12 +30,13 @@ const showTabList = function(e, tab, tabData, tabActive, listActive) {
 
 catalogTabs.forEach(tab => {
 	const tabData = tab.dataset.catalog;
-
+	
 	tab.addEventListener('click', function(e) {
+		console.log(tabData);
 
 		hideTabList(tab, catalogTabs, catalogLists, 'catalog__tab--active', 'catalog__list--active');
 
-		showTabList(e, tab, tabData, 'catalog__tab--active', 'catalog__list--active');
+		showTabList(e, tab, tabData, '.catalog__tab', 'catalog__tab--active', 'catalog__list--active');
 	})
 })
 

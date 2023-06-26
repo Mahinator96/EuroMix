@@ -6,4 +6,5 @@
 /* //= components/request.js */
 /* //= components/catalog.js */
 /* //= components/partners.js */
+/* //= components/services.js */
 /* //= components/modal.js */
