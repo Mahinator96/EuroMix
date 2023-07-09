@@ -18,6 +18,7 @@ const body = document.querySelector('body'),
 			catalogCompleteItems = Array.from(document.querySelectorAll('.catalog__complete-item')),
 			partnersSlider = document.querySelector('.partners__slider'),
 			servicesTabs = Array.from(document.querySelectorAll('.services__tab')),
-			servicesLists = document.querySelectorAll('.services__tab-wrapper')
+			servicesLists = document.querySelectorAll('.services__tab-wrapper'),
+			sertificSlider = document.querySelector('.sertific__slider')
 
 // console.log();

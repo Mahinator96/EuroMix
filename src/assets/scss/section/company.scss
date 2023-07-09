@@ -1,4 +1,5 @@
 .company {
+	margin-bottom: 60px;
 	// .company__title
 	&__title {
 		margin-bottom: 29px;
@@ -73,6 +74,9 @@
 			flex-grow: 1;
 			justify-content: center;
 		}
+		@media (max-width: 440px) {
+			flex-direction: column;
+		}
 	}
 	// .company__item-text
 	&__item-text {
@@ -89,6 +93,7 @@
 	// .company__video
 	&__video {
 		max-width: 100%;
+		box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.25);
 
 		@media (max-width: 640px) {
 			height: 53vw;

@@ -7,4 +7,5 @@
 /* //= components/catalog.js */
 /* //= components/partners.js */
 /* //= components/services.js */
+//= components/sertific.js
 /* //= components/modal.js */
