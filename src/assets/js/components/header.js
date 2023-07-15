@@ -18,3 +18,8 @@ userEnter.addEventListener('click', function() {
 	modalEntry.classList.add('modal--open');
 	body.classList.add('_lock');
 })
+
+headerCallPhone.addEventListener('click', function() {
+	modalPhone.classList.add('modal--open');
+	body.classList.add('_lock');
+})

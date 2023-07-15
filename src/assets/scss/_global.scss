@@ -129,3 +129,70 @@ picture {
 .hidden {
 	display: none !important;
 }
+
+// .promo__years
+.years {
+	font-size: 130px;
+	width: 1.1769em;
+	font-weight: 700;
+	color: var(--YellowDark);
+	padding: 15px 0;
+
+	@media (max-width: 880px) {
+		display: flex;
+		gap: 10px;
+		font-size: 90px;
+		width: auto;
+		padding-bottom: 0;
+	}
+	@media (max-width: 640px) {
+		font-size: 60px;
+	}
+	// .years span
+	span {
+		display: block;
+	}
+	// .years-number
+	&-number {
+		line-height: 76.923%;
+	}
+	// .years-box
+	&-box {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+
+		@media (max-width: 880px) {
+			gap: 6px;
+		}
+	}
+	// .years-year
+	&-year {
+		font-size: 40px;
+		line-height: 90%; /* 36/40 */
+
+		@media (max-width: 880px) {
+			line-height: 100%;
+			font-size: 25px;
+		}
+		@media (max-width: 640px) {
+			font-size: 20px;
+		}
+	}
+	// .years-success
+	&-success {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 100%;
+		width: 5.0714em;
+
+		@media (max-width: 880px) {
+			font-size: 25px;
+			font-weight: 700;
+			width: auto;
+		}
+		@media (max-width: 640px) {
+			font-size: 20px;
+		}
+	}
+}

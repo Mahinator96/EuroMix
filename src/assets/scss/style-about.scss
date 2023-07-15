@@ -1,0 +1,38 @@
+@import '_fonts.scss';
+@import 'var.scss';
+@import '__mixin.scss';
+@import '_global.scss';
+
+/* COMPONENTS */
+@import 'components/section.scss';
+@import 'components/search.scss';
+@import 'components/contacts.scss';
+@import 'components/burger.scss';
+@import 'components/modal.scss';
+@import 'components/commit.scss';
+
+.about-title {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 115%;
+
+	@media (max-width: 1180px) {
+		text-align: center;
+	}
+	@media (max-width: 880px) {
+		font-size: 29px;
+	}
+	@media (max-width: 440px) {
+		font-size: 24px;
+	}
+}
+
+/* SECTION */
+@import 'section/header.scss';
+@import 'section/footer.scss';
+@import 'section/modalRegister.scss';
+@import 'section/modalSuccess.scss';
+
+@import 'section/way.scss';
+@import 'section/activity.scss';
+@import 'section/history.scss';

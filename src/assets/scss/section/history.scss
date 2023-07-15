@@ -1,0 +1,141 @@
+.history {
+	margin-bottom: 80px;
+	// .history__years
+	&__years {
+		width: 168px;
+		@media (max-width: 880px) {
+			display: block;
+			gap: 0;
+			font-size: 130px;
+			// width: 1.1769em;
+			padding: 15px 0;
+		}
+		@media (max-width: 640px) {
+			display: none;
+		}
+
+	}
+	.years-box {
+		justify-content: start;
+		gap: 6px;
+	}
+	.years-year {
+		@media (max-width: 880px) {
+			font-size: 40px;
+			line-height: 90%; /* 36/40 */
+		}
+		@media (max-width: 640px) {
+			font-size: 40px;
+		}
+	}
+	.years-success {
+		@media (max-width: 880px) {
+			font-weight: 500;
+			font-size: 14px;
+			width: 5.0714em;
+		}
+		@media (max-width: 640px) {
+			font-size: 14px;
+		}
+	}
+	// .history__list
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+
+		@media (max-width: 640px) {
+			gap: 30px;
+		}
+	}
+	// .history__item
+	&__item {
+		display: flex;
+		gap: 15px;
+
+		@media (max-width: 640px) {
+			flex-direction: column;
+		}
+		// align-items: center;
+	}
+	// .history__item-left
+	&__item-left {
+    display: flex;
+		justify-content: center;
+		flex-direction: column;
+		max-width: 184px;
+		width: 100%;
+
+		@media (max-width: 640px) {
+			margin: 0 auto;
+			max-width: auto;
+			width: auto;
+		}
+	}
+	// .history__item-right
+	&__item-right {
+		display: flex;
+		flex-direction: column;
+    justify-content: center;
+		padding-left: 15px;
+		border-left: 1px solid var(--textGray);
+
+		@media (max-width: 640px) {
+			padding-left: 0;
+			border-left: none;
+		}
+	}
+	// .history__item-title
+	&__item-title {
+		color: #9B9B9B;
+		font-size: 64px;
+		line-height: 115.625%; /* 74/64 */
+		font-weight: 700;
+
+		@media (max-width: 640px) {
+			font-size: 36px;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+	}
+	// .history__item-text
+	&__item-text {
+		color: var(--textGrayDark);
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px; /* 150% */
+
+		span {
+			color: var(--textBlack);
+			font-weight: 700;
+		}
+	}
+	// .history__item-years
+	&__item-years {
+		font-size: 32px;
+		line-height: 115%;
+		font-weight: 700;
+		color: #9B9B9B;
+		margin-bottom: 10px;
+
+		@media (max-width: 640px) {
+			margin-bottom: 0;
+		}
+		// .history__item-years--now
+		&--now {
+			color: var(--YellowMain);
+		}
+	}
+	// .history__item-pic
+	&__item-pic {
+		width: 168px;
+		height: 263px;
+
+		@media (max-width: 640px) {
+			display: none;
+		}
+	}
+	// .history__item-img
+	&__item-img {
+	}
+}

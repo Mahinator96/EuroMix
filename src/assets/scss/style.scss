@@ -1,8 +1,8 @@
 /* SETTINGS */
 @import '_fonts.scss';
 @import 'var.scss';
-@import '_global.scss';
 @import '__mixin.scss';
+@import '_global.scss';
 
 /* COMPONENTS */
 @import 'components/section.scss';
@@ -10,17 +10,21 @@
 @import 'components/contacts.scss';
 @import 'components/burger.scss';
 @import 'components/modal.scss';
-@import 'components/request.scss';
-@import 'components/catalog-item.scss';
-@import 'components/product.scss';
 @import 'components/commit.scss';
+
+
 @import 'components/news.scss';
+@import 'components/product.scss';
+@import 'components/catalog-item.scss';
+@import 'components/request.scss';
 
 /* SECTION */
 @import 'section/header.scss';
-@import 'section/promo.scss';
+@import 'section/footer.scss';
 @import 'section/modalRegister.scss';
 @import 'section/modalSuccess.scss';
+
+@import 'section/promo.scss';
 @import 'section/catalog.scss';
 @import 'section/strong.scss';
 @import 'section/partners.scss';
@@ -30,4 +34,3 @@
 @import 'section/projectNews.scss';
 @import 'section/company.scss';
 @import 'section/sertific.scss';
-@import 'section/footer.scss';
