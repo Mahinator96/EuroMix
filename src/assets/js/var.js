@@ -11,5 +11,3 @@ const modalEntry = document.querySelector('.modal__entry');
 const modalPhone = document.querySelector('.modal__phone');
 const registerLink = document.querySelector('.modal__you-link');
 const modalКegister = document.querySelector('.modal__register');
-
-// console.log();

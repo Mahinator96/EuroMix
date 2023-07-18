@@ -196,3 +196,19 @@ picture {
 		}
 	}
 }
+
+.about-title {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 115%;
+
+	@media (max-width: 1180px) {
+		text-align: center;
+	}
+	@media (max-width: 880px) {
+		font-size: 29px;
+	}
+	@media (max-width: 440px) {
+		font-size: 24px;
+	}
+}
