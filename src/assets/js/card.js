@@ -3,3 +3,4 @@
 //= components/modal.js
 
 //= components/sale.js
+//= components/cardInfo.js
